@@ -1,0 +1,21 @@
+//calculator
+#include<studio.h>
+#include<math.h>
+main()
+{
+int a,b,res;char op;
+printed("enter the arithmetic expression");
+scanf("%d%c%d",&a,&op,&b);
+switch (op)
+{
+case'+':res=a+b;break;
+case'-':res=a-b;break;
+case'*':res=a*b;break;
+case'/':if(b==0);
+printf("decided by error");
+else 
+res=a/b;break;
+default:printf("invalid expression");break;
+}
+printf("res=%d",res);
+}
